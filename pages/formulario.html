@@ -3,10 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario de perdida</title>
-  <link rel="stylesheet" href="../styles/global.css">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="../styles/formulario.css">
 </head>
 <body>
+  <header>
+    <h1>Busco a mi amigo perdido! </h1>
+</header>
+<div>
+    <form class="formulario" target="_blank" method="post">
+        <h2 class="formtitulo">Ingrese los datos de su amigo perdido!</h2>
+        
+        <input class="forminput" type="text" name="name" id="name" required>
+        <label class="formlabel" for="name">Ingrese su Nombre: </label>
+        
+        <input class="forminput" type="text" name="animal" id="animal" required>
+        <label class="formlabel" for="animal">Ingrese nombre del animal: </label>
+        
+        <input class="forminput" type="number" name="DNI" id="DNI"required>
+        <label class="formlabel" for="DNI">Ingrese su DNI: </label>
+        
+        <input class="forminput" type="email" name="Email" id="Email" required>
+        <label class="formlabel" for="Email">Ingrese su Email: </label>
+       
+        <input class="forminput" type="tel" name="Telefono" id="Telefono" required>
+        <label class="formlabel" for="Telefono">Ingrese su numero de telefono: </label>
+        
+        <input class="formsubmit" type="submit" value="Enviar Datos">
+    </form>
+</div>
+<script src="function.js"></script>
   <a href="./main.html">Volver al inicio</a>
 </body>
 </html>

@@ -1,80 +1,85 @@
 * {
-    box-sizing: border-box;
-    font-family: "Sometype Mono", monospace;
-    color: white;
-    border-radius: 10px;
-  }
-  body {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(46, 124, 144, 1) 42%,
-      rgba(0, 212, 255, 1) 100%
-    );
-  }
-  .formulario {
-    width: 500px;
-    max-width: 100%;
-    margin: auto;
-    margin-top: 20px;
-    padding: 20px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
-    position: relative;
-    background: #bee9e8 transparent;
-  }
-  h1 {
-    text-align: center;
-    background-color: #1B4965;
-    width: 50%;
-    margin: 20px auto;
-    border: 1px solid #EBF7FF;
-   
-  }
-  .formtitulo {
-    text-align: center;
-    margin: 10px auto;
-    padding-bottom: 30px;
-  }
-  .forminput,
-  .formlabel,
-  .formsubmit,
-  .formselect{
-    display: block;
-    width: 100%;
-    font-size: 1.3em;
-  }
-  .formlabel {
-    padding-left: 15px;
-    position: absolute;
-    margin-top: -85px;
-    z-index: -20;
-    transition: all;
-  }
-  .formselect,
-  option {
-    color: black;
-    margin: 20px auto;
-  }
-  .forminput{
-    padding: 20px;
-    margin-bottom: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    background: rgb(35, 155, 86, 0.1);
-  }
-  .forminput:focus + .formlabel {
-    margin-top: -140px;
-  }
-  .formsubmit {
-    margin: 10px 0px;
-    display: block;
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    color: white;
-    background-color: rgb(24, 106, 59);
-    cursor: pointer;
-    border: none;
-  }
-  .fijar {
-    margin-top: -135px;
-  }
+  font-family: "Sometype Mono", monospace;
+  color: white;
+  border-radius: 10px;
+}
+
+form {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  background: #bee9e8 transparent;
+}
+
+h1 {
+  text-align: center;
+  background-color: #1b4965;
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid #ebf7ff;
+}
+
+.formtitle {
+  text-align: center;
+  margin: 10px auto;
+  padding-bottom: 30px;
+}
+
+.forminput,
+.formlabel,
+.formsubmit,
+.formselect {
+  display: block;
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.formlabel {
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -85px;
+  z-index: 10;
+  transition-property: margin-top;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0;
+}
+
+.formselect,
+option {
+  color: black;
+  margin: 20px auto;
+}
+
+.forminput {
+  padding: 20px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: rgb(35, 155, 86, 0.1);
+}
+
+
+
+.forminput:focus + .formlabel {
+  margin-top: -135px;
+}
+
+
+.formsubmit {
+  margin: 10px 0px;
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: white;
+  background-color: rgb(24, 106, 59);
+  cursor: pointer;
+  border: none;
+}
+.fijar {
+  margin-top: -135px;
+}
+

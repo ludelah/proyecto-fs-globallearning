@@ -1,15 +1,19 @@
 * {
   font-family: "Sometype Mono", monospace;
-  color: white;
+  color: #ffffff;
   border-radius: 10px;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(46, 124, 144, 1) 42%, rgba(0, 212, 255, 1) 100%);
 }
 
 form {
   width: 500px;
   max-width: 100%;
-  margin: auto;
-  margin-top: 20px;
+  margin: 20px auto;
   padding: 20px;
+
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
   position: relative;
   background: #bee9e8 transparent;
@@ -21,6 +25,31 @@ h1 {
   width: 50%;
   margin: 20px auto;
   border: 1px solid #ebf7ff;
+  padding: 15px;
+}
+
+footer {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+button {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: #000000;
+  border-color: #daa520;
+  border-radius: 0px;
+  padding: 10px;
+
+  transition-property: border-color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+button:hover {
+  border-color: #1ebb99;
 }
 
 .formtitle {
@@ -51,7 +80,7 @@ h1 {
 
 .formselect,
 option {
-  color: black;
+  color: #000000;
   margin: 20px auto;
 }
 
@@ -62,24 +91,21 @@ option {
   background: rgb(35, 155, 86, 0.1);
 }
 
-
-
 .forminput:focus + .formlabel {
   margin-top: -135px;
 }
-
 
 .formsubmit {
   margin: 10px 0px;
   display: block;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  color: white;
+  color: #ffffff;
   background-color: rgb(24, 106, 59);
   cursor: pointer;
   border: none;
 }
+
 .fijar {
   margin-top: -135px;
 }
-

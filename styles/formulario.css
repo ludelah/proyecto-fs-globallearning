@@ -34,23 +34,6 @@ footer {
   justify-content: center;
 }
 
-button {
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: bold;
-  background-color: #000000;
-  border-color: #daa520;
-  border-radius: 0px;
-  padding: 10px;
-
-  transition-property: border-color;
-  transition-duration: 0.4s;
-  transition-timing-function: ease-out;
-}
-
-button:hover {
-  border-color: #1ebb99;
-}
 
 .formtitle {
   text-align: center;
@@ -65,6 +48,7 @@ button:hover {
   display: block;
   width: 100%;
   font-size: 1.3em;
+  margin-top: 10px;
 }
 
 .formlabel {
@@ -97,6 +81,7 @@ option {
 
 .formsubmit {
   margin: 10px 0px;
+  padding: 10px;
   display: block;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.3);

@@ -1,0 +1,21 @@
+
+body {
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 70vh 10vh;
+  justify-items: center;
+  align-items: center;
+}
+
+button {
+  width: 200px;
+  height: auto;
+}
+
+div {
+  height: 100%;
+  overflow: hidden;
+}
+img {
+  height: 80vh;
+  aspect-ratio: 1;
+}

@@ -1,102 +1,64 @@
 * {
   font-family: "Sometype Mono", monospace;
-<<<<<<< HEAD
-  color: black;
   border-radius: 10px;
   box-sizing: border-box;
 }
-
+body{
+background-image: url(../assets/fondo.jpg);
+}
+section{
+  display: grid;
+}
+.form-container{
+  margin: 1em;
+}
 form {
   margin: 0 auto;
-  width: 70vw;
+  text-align: center;
+  width: 90vw;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.767);
-=======
-  color: #ffffff;
-  border-radius: 10px;
-}
-
-body {
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(46, 124, 144, 1) 42%, rgba(0, 212, 255, 1) 100%);
-}
-
-form {
-  width: 500px;
-  max-width: 100%;
-  margin: 20px auto;
-  padding: 20px;
-
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
->>>>>>> refs/remotes/origin/development
   position: relative;
-  background: #bee9e8 transparent;
-}
-
-h1 {
-  text-align: center;
   background-color: #1b4965;
-<<<<<<< HEAD
-  border: 1px solid #ebf7ff;
+  h2{
+    padding: 1em;
+    color: #b6def8;
+    text-shadow: 2px 2px 2px #040708;
+  }
 }
 
-.formTitle {
+.title{
+  margin: 1em;
   text-align: center;
-  margin: 1em;
+  color: #040708;
+  background-color: #4a9ccf;
+  border: 1px solid #040708;
+  font-weight: bolder;
 }
-
 .formInput,
-.formLabel,.formLabel2 {
-  margin: 1em;
+.formLabel{
+  margin: 1.2em;
   width: 90%;
-  font-size: 1.2em;
+  font-size: 1em;
+  color: #b6def8;
+  text-shadow: 2px 2px 2px #040708;
+  font-weight: bolder;
 }
-
+.formLabel2 {
+  color: #b6def8;
+  text-shadow: 2px 2px 2px #040708;
+  font-weight: bolder;
+  margin-left: 1.5em;
+}
 .formLabel {
   padding-left: 0.5em;
   position: absolute;
   margin-top: -4em;
-=======
-  width: 50%;
-  margin: 20px auto;
-  border: 1px solid #ebf7ff;
-  padding: 15px;
-}
-
-footer {
-  display: flex;
-  align-items: end;
-  justify-content: center;
-}
-
-
-.formtitle {
-  text-align: center;
-  margin: 10px auto;
-  padding-bottom: 30px;
-}
-
-.forminput,
-.formlabel,
-.formsubmit,
-.formselect {
-  display: block;
-  width: 100%;
-  font-size: 1.3em;
-  margin-top: 10px;
-}
-
-.formlabel {
-  padding-left: 15px;
-  position: absolute;
-  margin-top: -85px;
-  z-index: 10;
->>>>>>> refs/remotes/origin/development
   transition-property: margin-top;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
   transition-delay: 0;
 }
 
-<<<<<<< HEAD
 .formInput {
   padding: 1em;
   margin-bottom: 1em;
@@ -107,48 +69,74 @@ footer {
   margin-top: -6em;
 }
 
+.data{
+  margin-left: 1.2em;
+  width: 90%;
+  padding: 1em;
+  font-size: 1em;
+}
 
 .btn {
-  margin: 1em;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 1em 1.5em;
+  padding: 1em;
+  border: 1px solid rgba(235, 175, 175, 0.3);
   color: white;
-=======
-.formselect,
-option {
-  color: #000000;
-  margin: 20px auto;
-}
-
-.forminput {
-  padding: 20px;
-  margin-bottom: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  background: rgb(35, 155, 86, 0.1);
-}
-
-.forminput:focus + .formlabel {
-  margin-top: -135px;
-}
-
-.formsubmit {
-  margin: 10px 0px;
-  padding: 10px;
-  display: block;
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  color: #ffffff;
->>>>>>> refs/remotes/origin/development
   background-color: rgb(24, 106, 59);
   cursor: pointer;
   border: none;
 }
-<<<<<<< HEAD
+.info-container{
+  margin: 1em;
+  background-color: #1b4965;
+  border: 1px solid #4a9ccf;
+  text-align: center;
+}
+.animal-container{
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 1px solid #4a9ccf;
+  & img{
+    width: 50%;
+    border: 2px solid #4a9ccf;
+  }
+  h3{
+   border: 2px solid #4a9ccf;
+  }
+  p{
+    padding: 1em;
+    color: #b6def8;
+    text-shadow: 2px 2px 2px #040708;
+  }
+}
 .fijar {
   margin-top: -6em;
 }
-=======
-
-.fijar {
-  margin-top: -135px;
+.shadow{
+  box-shadow: 2px 2px 2px #040708;
 }
->>>>>>> refs/remotes/origin/development
+@media (min-width: 500px) {
+  .formLabel{
+    display: block;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 2250px){
+  section{
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-container{
+    margin-left: 1em;
+    grid-area: 1;
+  }
+  form{
+    width: 50vw;
+  }
+  .formLabel{
+    display: block;
+  }
+  .btn{
+    left: 40%;
+  }
+}

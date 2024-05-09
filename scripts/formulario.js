@@ -1,4 +1,5 @@
 let inputs = document.getElementsByClassName("forminput");
+let textarea = document.getElementsByClassName("formTextarea");
 
 for (let i = 0; i < inputs.length; i++) {
   inputs[i].addEventListener("keyup", function () {
@@ -9,4 +10,6 @@ for (let i = 0; i < inputs.length; i++) {
     }
   });
 }
-
+if(textarea.value.length >= 1){
+  
+}

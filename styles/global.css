@@ -2,12 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
+   font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
+
 
 body {
   display: grid;
   background: rgb(231, 216, 193);
 }
+.menu-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1e2020be;
+   min-width: 20vw;
+  }
+  a > button {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    padding: 1em;
+    margin: 3px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  a > button:hover {
+    color: rgb(255, 218, 52);
+    background-color: #2b2b2b;
+  }
 
 h1 {
   text-align: center;

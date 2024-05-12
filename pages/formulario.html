@@ -10,58 +10,68 @@
 </head>
 
 <body>
+  <nav class="menu-container">
+    <a href="./main.html"><button>Inicio</button></a>
+    <a href="./quiz.html"><button>Quiz</button></a>
+    <a href="./juego.html"><button>Juego</button></a>
+  </nav>
   <header>
-    <h1 class="title">Busco a mi amigo perdido!</h1>
+    <h1 class="title shadow">Busco a mi amigo perdido!</h1>
   </header>
   <section>
-    <div class="info-container">
-      <h1 class="title" class="shadow">
+    <div class="info-container shadow">
+      <h2 class="title shadow">
         ¡Importante!
-      </h1>
-      <p class="title" class="shadow">Este formulario está diseñado para permitirte insertar información sobre un animal perdido. Una vez completado,
+      </h2>
+      <p class="txtShadow">Este formulario está diseñado para permitirte insertar información sobre un animal
+        perdido. Una vez completado,
         la información se agregará a una grilla donde se muestran más animales perdidos. Esta plataforma tiene como
         objetivo facilitar la búsqueda y eventual reunión de mascotas con sus dueños. Al compartir los detalles del
         animal perdido aquí, aumentamos las posibilidades de que sea encontrado por aquellos que buscan animales
         perdidos en la zona. ¡Tu contribución puede marcar la diferencia en la reunificación de mascotas y familias!</p>
-      
-      <div class="animal-container">
-        <h3>Nombre</h3>
-        <p>Leon</p>
-        <h3>Datos:</h3>
-        <p>Gato anaranjado y blanco de aproximadamente 2 años encontrado en las calles de la provincia de Buenos Aires, en el barrio de avellaneda!</p>
-        <h3>Contacto:</h3>
-        <p>Nombre: Sebastian <br>Telefono: 01122354123 <br> Email: sebascarp9@gmail.como</p>
-        <img src="../assets/gato1.jpg" alt="">
-      </div>
-      </div>
+
+      <h3 class="title shadow">Asi verás la informacion:</h2>
+        <div class="animal-container">
+          <div class="wrap-container">
+            <div class="img-container"><img src="../assets/gato1.jpg" alt="gato"></div>
+            <h2>Leon</h2>
+            <p>Gato anaranjado</p>
+            <h2>Contacto</h2>
+            <p>email + telefono </p>
+            <div class="btn-container">
+              <button class="btn txtShadow">Adopt</button>
+            </div>
+          </div>
+        </div>
+    </div>
     <div class="form-container">
+      <h3 class="shadow title">Ingrese los datos de su amigo perdido!</h3>
+
       <form class="shadow" id="form" target="_blank" method="post">
-        <h2 >Ingrese los datos de su amigo perdido!</h2>
 
-        <input class="formInput" type="text" name="name" id="name" required />
-        <label class="formLabel" for="name">Ingrese su Nombre: </label>
+        <input class="formInput txtShadow" type="text" name="name" id="name" required />
+        <label class="formLabel txtShadow" for="name">Ingrese su Nombre: </label>
 
-        <input class="formInput" type="text" name="animal" id="animal" required />
-        <label class="formLabel" for="animal">Ingrese nombre del animal: </label>
+        <input class="formInput txtShadow" type="text" name="animal" id="animal" required />
+        <label class="formLabel txtShadow" for="animal">Ingrese nombre del animal: </label>
 
-        <input class="formInput" type="tel" name="Telefono" id="Telefono" required />
-        <label class="formLabel" for="Telefono">Ingrese su numero de telefono: </label>
+        <input class="formInput txtShadow" type="tel" name="Telefono" id="Telefono" required />
+        <label class="formLabel txtShadow" for="Telefono">Ingrese su numero de telefono: </label>
 
-        <input class="formInput" type="email" name="Email" id="Email" required />
-        <label class="formLabel" for="Email">Ingrese su Email: </label>
+        <input class="formInput txtShadow" type="email" name="Email" id="Email" required />
+        <label class="formLabel txtShadow" for="Email">Ingrese su Email: </label>
 
-        <label class="formLabel2" for="img">Ingrese imagen del animal: </label>
-        <input class="formInput" type="file" name="img" id="img" required /><br>
+        <label class="formLabel2 txtShadow" for="img">Ingrese imagen del animal: </label>
+        <input class="formInput txtShadow" type="file" name="img" id="img" required /><br>
 
-        <label for="data" class="formLabel2">Datos del animal:</label>
+        <label for="data" class="formLabel2 txtShadow">Datos del animal:</label>
         <textarea class="data" name="data" id="data" rows="8"></textarea>
 
-        <input class="btn" type="submit" value="Enviar Datos" />
+        <input class="btn txtShadow" type="submit" value="Enviar Datos" />
       </form>
     </div>
     </div>
   </section>
-  <a href="./main.html">Volver al inicio</a>
   <script src="../scripts/formulario.js"></script>
 </body>
 

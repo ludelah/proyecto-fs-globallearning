@@ -12,34 +12,12 @@ header {
 
 
 nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   grid-column-start: 2;
   grid-column-end: 4;
-  margin: 10px;
-  text-align: center;
-  background-color: rgb(223, 223, 223);
-
-  z-index: 99;
-  min-width: 20vw;
 }
 
 span {
   margin: 10px;
-}
-
-a > button {
-  background-color: rgb(223, 223, 223);
-  width: 100%;
-  padding: 8px;
-  margin: 3px;
-  border: 0;
-  transition: background-color 0.3s ease-out;
-}
-
-a > button:hover {
-  background-color: #63c2ad;
 }
 
 main {

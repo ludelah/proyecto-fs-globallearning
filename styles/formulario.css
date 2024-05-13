@@ -1,8 +1,9 @@
 * {
-  font-family: "Sometype Mono", monospace;
   color: #ffffff;
   border-radius: 10px;
 }
+
+
 
 body {
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(46, 124, 144, 1) 42%, rgba(0, 212, 255, 1) 100%);
@@ -17,6 +18,13 @@ form {
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
   position: relative;
   background: #bee9e8 transparent;
+
+  background-color: #f0f0f0;
+}
+
+header > h1 {
+  background-color: #fafafa;
+  box-shadow: 0 5px 40px 1px;
 }
 
 h1 {
@@ -26,6 +34,14 @@ h1 {
   margin: 20px auto;
   border: 1px solid #ebf7ff;
   padding: 15px;
+
+
+  font-size: 3vw;  
+}
+
+h2 {
+  font-size: 2vw;
+  color: #303030;
 }
 
 footer {
@@ -60,6 +76,8 @@ footer {
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
   transition-delay: 0;
+
+  color: #303030;
 }
 
 .formselect,
@@ -89,6 +107,14 @@ option {
   background-color: rgb(24, 106, 59);
   cursor: pointer;
   border: none;
+  position: relative;
+
+  box-shadow: black 0 5px;
+}
+
+.formsubmit:hover {
+  box-shadow: 0 0;
+  bottom: -5px;
 }
 
 .fijar {

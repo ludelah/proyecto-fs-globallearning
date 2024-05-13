@@ -1,9 +1,13 @@
 
 body {
-  grid-template-columns: 1fr;
-  grid-template-rows: 10vh 70vh 10vh;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+h1 {
+  font-family: "Poetsen One", sans-serif;
 }
 
 button {
@@ -15,6 +19,7 @@ div {
   height: 100%;
   overflow: hidden;
 }
+
 img {
   height: 80vh;
   aspect-ratio: 1;

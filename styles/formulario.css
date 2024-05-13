@@ -28,9 +28,12 @@ form {
 
 .title {
   margin: 1em;
+  padding: 10px;
   background: #bee9e8 transparent;
+  text-align: center;
 
   background-color: #f0f0f0;
+  color: #303030;
 }
 
 header > h1 {
@@ -73,7 +76,7 @@ h1 {
   transition-timing-function: ease-out;
   transition-delay: 0;
 
-  color: #303030;
+  color: #fafafa;
 }
 
 .formInput {

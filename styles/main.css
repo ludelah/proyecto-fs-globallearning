@@ -38,19 +38,6 @@ span {
   margin: 10px;
 }
 
-a > button {
-  background-color: rgb(223, 223, 223);
-  width: 100%;
-  padding: 8px;
-  margin: 3px;
-  border: 0;
-  transition: background-color 0.3s ease-out;
-}
-
-a > button:hover {
-  background-color: #63c2ad;
-}
-
 main {
   display: flex;
   margin: 40px;

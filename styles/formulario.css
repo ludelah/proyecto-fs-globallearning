@@ -1,22 +1,33 @@
 * {
-  color: #ffffff;
-  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 
 
 body {
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(46, 124, 144, 1) 42%, rgba(0, 212, 255, 1) 100%);
+  background-image: url(../assets/fondo.jpg);
 }
 
+section {
+  display: grid;
+}
 form {
-  width: 500px;
-  max-width: 100%;
-  margin: 20px auto;
-  padding: 20px;
-
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  text-align: center;
+  width: 90vw;
+  padding: 1em;
+  box-shadow: 2px 2px 30px 1px rgba(0, 0, 0, 0.863);
   position: relative;
+  background-color: #817051;
+ margin-bottom: 1em;
+  h2 {
+    padding: 1em;
+    color: #b6b2ab;
+  }
+}
+
+.title {
+  margin: 1em;
   background: #bee9e8 transparent;
 
   background-color: #f0f0f0;
@@ -29,49 +40,34 @@ header > h1 {
 
 h1 {
   text-align: center;
+  background-color: #fafafa;
+  box-shadow: 0 5px 40px 1px;
   background-color: #1b4965;
   width: 50%;
   margin: 20px auto;
   border: 1px solid #ebf7ff;
   padding: 15px;
-
-
-  font-size: 3vw;  
 }
 
-h2 {
-  font-size: 2vw;
-  color: #303030;
+.formInput,
+.formLabel {
+  margin: 1.2em;
+  width: 90%;
+  font-size: 1em;
+  color: #FCFCFC;
+  font-weight: bolder;
 }
 
-footer {
-  display: flex;
-  align-items: end;
-  justify-content: center;
+.formLabel2 {
+  color: #FCFCFC;
+  font-weight: bolder;
+  margin-left: 1.5em;
 }
 
-
-.formtitle {
-  text-align: center;
-  margin: 10px auto;
-  padding-bottom: 30px;
-}
-
-.forminput,
-.formlabel,
-.formsubmit,
-.formselect {
-  display: block;
-  width: 100%;
-  font-size: 1.3em;
-  margin-top: 10px;
-}
-
-.formlabel {
-  padding-left: 15px;
+.formLabel {
+  padding-left: 0.5em;
   position: absolute;
-  margin-top: -85px;
-  z-index: 10;
+  margin-top: -4em;
   transition-property: margin-top;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
@@ -80,33 +76,90 @@ footer {
   color: #303030;
 }
 
-.formselect,
-option {
-  color: #000000;
-  margin: 20px auto;
-}
-
-.forminput {
-  padding: 20px;
-  margin-bottom: 40px;
+.formInput {
+  padding: 1em;
+  margin-bottom: 1em;
   border: 1px solid rgba(0, 0, 0, 0.3);
   background: rgb(35, 155, 86, 0.1);
 }
 
-.forminput:focus + .formlabel {
-  margin-top: -135px;
+.formInput:focus+.formLabel {
+  margin-top: -6em;
 }
 
-.formsubmit {
-  margin: 10px 0px;
-  padding: 10px;
-  display: block;
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  color: #ffffff;
-  background-color: rgb(24, 106, 59);
+.data {
+  margin-left: 1.2em;
+  width: 90%;
+  padding: 1em;
+  font-size: 1em;
+}
+
+.btn {
+  margin: 1.2em 1.5em;
+  padding: 1em;
+  color: white;
+  background-color: rgb(187, 27, 27);
   cursor: pointer;
   border: none;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  transition: all .3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  font-weight: bolder;
+  color: rgba(2, 1, 1, 0.712);
+  transition: all .3s ease;
+}
+
+.info-container {
+  color: #FCFCFC;
+  margin: 1em;
+  background-color: #817051;
+  border: 1px solid #040708;
+  text-align: center;
+}
+
+.animal-container {
+  background: linear-gradient(45deg, rgb(207, 150, 96) 0%, #030e24 100%);
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+  width: 70%;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.125);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap-container {
+  background-color: rgba(155, 153, 76, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1em;
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+  width: 100%;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+.img-container {
+  border-radius: 12px;
+}
+
+.img-container img {
+  width: 300px;
   position: relative;
 
   box-shadow: black 0 5px;
@@ -118,5 +171,41 @@ option {
 }
 
 .fijar {
-  margin-top: -135px;
+  margin-top: -6em;
+}
+
+.shadow {
+  box-shadow: -4px 4px 4px #040708;
+}
+.txtShadow{
+  text-shadow: 2px 2px 2px #040708;
+}
+
+@media (min-width: 500px) {
+  .formLabel {
+    display: block;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 2250px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-container {
+    margin-left: 1em;
+    grid-area: 1;
+  }
+
+  form {
+    width: 50vw;
+  }
+
+  .formLabel {
+    display: block;
+  }
+
+  .btn {
+    left: 40%;
+  }
 }

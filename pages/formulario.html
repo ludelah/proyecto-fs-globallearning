@@ -1,41 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario</title>
-    <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="../styles/formulario.css" />
-  </head>
-  <body>
-    <header>
-      <h1>¡Busco a mi amigo perdido!</h1>
-    </header>
-    <main>
-      <form class="formulario" target="_blank" method="post">
-        <h2 class="formtitle">Ingrese los datos de su amigo perdido</h2>
 
-        <input class="forminput" type="text" name="name" id="name" required />
-        <label class="formlabel" for="name">Ingrese su Nombre: </label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="../styles/formulario.css" />
+</head>
 
-        <input class="forminput" type="text" name="animal" id="animal" required />
-        <label class="formlabel" for="animal">Ingrese nombre del animal: </label>
+<body>
+  <nav class="menu-container">
+    <a href="./main.html"><button>Inicio</button></a>
+    <a href="./quiz.html"><button>Quiz</button></a>
+    <a href="./juego.html"><button>Juego</button></a>
+  </nav>
+  <header>
+    <h1 class="title shadow">Busco a mi amigo perdido!</h1>
+  </header>
+  <section>
+    <div class="info-container shadow">
+      <h2 class="title shadow">
+        ¡Importante!
+      </h2>
+      <p class="txtShadow">Este formulario está diseñado para permitirte insertar información sobre un animal
+        perdido. Una vez completado,
+        la información se agregará a una grilla donde se muestran más animales perdidos. Esta plataforma tiene como
+        objetivo facilitar la búsqueda y eventual reunión de mascotas con sus dueños. Al compartir los detalles del
+        animal perdido aquí, aumentamos las posibilidades de que sea encontrado por aquellos que buscan animales
+        perdidos en la zona. ¡Tu contribución puede marcar la diferencia en la reunificación de mascotas y familias!</p>
 
-        <input class="forminput" type="number" name="DNI" id="DNI" required />
-        <label class="formlabel" for="DNI">Ingrese su DNI: </label>
+      <h3 class="title shadow">Asi verás la informacion:</h2>
+        <div class="animal-container">
+          <div class="wrap-container">
+            <div class="img-container"><img src="../assets/gato1.jpg" alt="gato"></div>
+            <h2>Leon</h2>
+            <p>Gato anaranjado</p>
+            <h2>Contacto</h2>
+            <p>email + telefono </p>
+            <div class="btn-container">
+              <button class="btn txtShadow">Adopt</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="form-container">
+      <h3 class="shadow title">Ingrese los datos de su amigo perdido!</h3>
 
-        <input class="forminput" type="email" name="Email" id="Email" required />
-        <label class="formlabel" for="Email">Ingrese su Email: </label>
+      <form class="shadow" id="form" target="_blank" method="post">
 
-        <input class="forminput" type="tel" name="Telefono" id="Telefono" required />
-        <label class="formlabel" for="Telefono">Ingrese su numero de telefono: </label>
+        <input class="formInput txtShadow" type="text" name="name" id="name" required />
+        <label class="formLabel txtShadow" for="name">Ingrese su Nombre: </label>
 
-        <input class="formsubmit" type="submit" value="Enviar Datos" />
+        <input class="formInput txtShadow" type="text" name="animal" id="animal" required />
+        <label class="formLabel txtShadow" for="animal">Ingrese nombre del animal: </label>
+
+        <input class="formInput txtShadow" type="tel" name="Telefono" id="Telefono" required />
+        <label class="formLabel txtShadow" for="Telefono">Ingrese su numero de telefono: </label>
+
+        <input class="formInput txtShadow" type="email" name="Email" id="Email" required />
+        <label class="formLabel txtShadow" for="Email">Ingrese su Email: </label>
+
+        <label class="formLabel2 txtShadow" for="img">Ingrese imagen del animal: </label>
+        <input class="formInput txtShadow" type="file" name="img" id="img" required /><br>
+
+        <label for="data" class="formLabel2 txtShadow">Datos del animal:</label>
+        <textarea class="data" name="data" id="data" rows="8"></textarea>
+
+        <input class="btn txtShadow" type="submit" value="Enviar Datos" />
       </form>
-    </main>
-    <footer>
-      <a href="./main.html"><button class="inicio">Volver al inicio</button></a>
-    </footer>
-    <script src="../scripts/formulario.js"></script>
-  </body>
+    </div>
+    </div>
+  </section>
+  <script src="../scripts/formulario.js"></script>
+</body>
+
 </html>

@@ -95,24 +95,6 @@ h1 {
 .formInput:focus+.formLabel {
   margin-top: -6em;
 }
-
-/*Estilos de seccion */
-.title {
-  margin: 1em;
-  text-align: center;
-  color: #FCFCFC;
-  background-color: #040708;
-  border: 1px solid #040708;
-  font-weight: bolder;
-}
-
-.data {
-  margin-left: 1.2em;
-  width: 90%;
-  padding: 1em;
-  font-size: 1em;
-}
-
 .btn {
   margin: 1.2em 1.5em;
   padding: 1em;
@@ -132,6 +114,23 @@ h1 {
   transition: all .3s ease;
 }
 
+/*Estilos de seccion */
+.title {
+  margin: 1em;
+  text-align: center;
+  color: #FCFCFC;
+  background-color: #040708;
+  border: 1px solid #040708;
+  font-weight: bolder;
+}
+
+.data {
+  margin-left: 1.2em;
+  width: 90%;
+  padding: 1em;
+  font-size: 1em;
+}
+
 .info-container {
   color: #FCFCFC;
   margin: 1em;
@@ -144,7 +143,7 @@ h1 {
   background: linear-gradient(45deg, rgb(207, 150, 96) 0%, #030e24 100%);
   margin: 0 auto;
   margin-bottom: 0.5em;
-  width: 70%;
+  width: 60%;
   border-radius: 12px;
   border: 2px solid rgba(255, 255, 255, 0.125);
   padding: 1em;
@@ -178,15 +177,7 @@ h1 {
 }
 
 .img-container img {
-  width: 300px;
-  position: relative;
-
-  box-shadow: black 0 5px;
-}
-
-.formsubmit:hover {
-  box-shadow: 0 0;
-  bottom: -5px;
+  width: 50%;
 }
 
 .fijar {
@@ -200,8 +191,8 @@ h1 {
 .txtShadow {
   text-shadow: 2px 2px 2px #040708;
 }
-
-@media (min-width: 500px) {
+/*Media querys */
+@media (min-width: 300px) {
   .formLabel {
     display: block;
   }

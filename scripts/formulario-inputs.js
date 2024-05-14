@@ -1,5 +1,5 @@
-let inputs = document.getElementsByClassName("formInput");
 
+let inputs = document.getElementsByClassName("formInput");
 for (let i = 0; i < inputs.length; i++) {
   inputs[i].addEventListener("keyup", function () {
     if (this.value.length >= 1) {
@@ -9,5 +9,4 @@ for (let i = 0; i < inputs.length; i++) {
     }
   });
 }
-
 

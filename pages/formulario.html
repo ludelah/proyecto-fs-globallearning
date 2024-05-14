@@ -55,11 +55,11 @@
         <input class="formInput txtShadow" type="text" name="animal" id="animal" required />
         <label class="formLabel txtShadow" for="animal">Ingrese nombre del animal: </label>
 
-        <input class="formInput txtShadow" type="tel" name="Telefono" id="Telefono" required />
-        <label class="formLabel txtShadow" for="Telefono">Ingrese su numero de telefono: </label>
+        <input class="formInput txtShadow" maxlength="10" type="number" name="telefono" id="telefono" required />
+        <label class="formLabel txtShadow" for="telefono">Ingrese su numero de telefono: </label>
 
-        <input class="formInput txtShadow" type="email" name="Email" id="Email" required />
-        <label class="formLabel txtShadow" for="Email">Ingrese su Email: </label>
+        <input class="formInput txtShadow" type="email" name="email" id="email" required />
+        <label class="formLabel txtShadow" for="email">Ingrese su Email: </label>
 
         <label class="formLabel2 txtShadow" for="img">Ingrese imagen del animal: </label>
         <input class="formInput txtShadow" type="file" name="img" id="img" required /><br>
@@ -67,12 +67,21 @@
         <label for="data" class="formLabel2 txtShadow">Datos del animal:</label>
         <textarea class="data" name="data" id="data" rows="8"></textarea>
 
+        <span class="errorValue">
+          Porfavor, verifique las siguientes validaciones de datos:
+          - Su nombre y el de su mascota solo debe contener letras.
+          - El email debe contener el siguiente formato: "ejemplo@gmail.com". 
+          - Recuerde ingresar un formato de telefono valido ( sin 0 ni 15).   
+        </span>
+
         <input class="btn txtShadow" type="submit" value="Enviar Datos" />
+        
       </form>
     </div>
     </div>
   </section>
-  <script src="../scripts/formulario.js"></script>
+  <script src="../scripts/formulario-inputs.js"></script>
+  <script src="../scripts/formulario-validates.js"></script>
 </body>
 
 </html>

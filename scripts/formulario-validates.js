@@ -26,19 +26,12 @@ const createNewCard = (e) => {
     const tel = telValue.value.trim();
     console.log(tel);
 
-
-    if (!regex.test(name) || !regex.test(animal)) {
-        alert('Nombre invalid');
+    if (!regex.test(name) || !regex.test(animal) || !regexEmail.test(email) || !regexTel.test(tel)) {
+        const errorMessage = document.getElementById('errorMessage')
+        errorMessage.style.display = "block"
         return;
+    } else {
+        errorMessage.style.display = "none";
     }
-    if (!regexEmail.test(email)) {
-        alert('email invalid');
-        return;
-    }
-    if (!regexTel.test(tel)) {
-        alert('tel invalid');
-        return;
-    }
-
     this.submit();
 }

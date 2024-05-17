@@ -11,7 +11,7 @@ const validateData = (e) => {
     const regexTel = /^\(?\d{2}\)?[\s\.-]?\d{4}[\s\.-]?\d{4}$/;
     //Variables que contienen el valor de inputs
     const nameValue = document.getElementById('name');
-    const name = nameValue.value.trim();
+    const nameUser = nameValue.value.trim();
 
     const nameAnimal = document.getElementById('animal');
     const animal = nameAnimal.value.trim();
@@ -25,8 +25,11 @@ const validateData = (e) => {
     const fileInput = document.getElementById('img');
     const file = fileInput.files && fileInput.files[0];
 
+    const dataAnimalValue = document.getElementById('data');
+    const dataAnimal = dataAnimalValue.value;
+
     //Funcion para validar datos y mostrar mensaje de error
-    if (!regex.test(name) || !regex.test(animal) || !regexEmail.test(email) || !regexTel.test(tel)) {
+    if (!regex.test(nameUser) || !regex.test(animal) || !regexEmail.test(email) || !regexTel.test(tel)) {
         const errorMessage = document.getElementById('errorMessage')
         errorMessage.style.display = "block"
         return;
@@ -38,10 +41,12 @@ const validateData = (e) => {
         const readFile = new FileReader();
         readFile.onload = (e) => {
             const dataNewAnimal = {
-                name: name,
+                nameUser: nameUser,
                 animalName: animal,
                 email: email,
-                file: e.target.result
+                tel: tel,
+                file: e.target.result,
+                dataAnimal: dataAnimal
             }
             let formDataArray = JSON.parse(localStorage.getItem('formDataArray')) || [];
             formDataArray.push(dataNewAnimal);
@@ -51,6 +56,13 @@ const validateData = (e) => {
         readFile.readAsDataURL(file);
     } else {
         alert('Insert a file valid')
+    }
+    //Funcion para crear nueva card en main
+    let dataJSON = localStorage.getItem("dataNewAnimal");
+    if (data) {
+        data = JSON.parse(dataJSON);
+    } else {
+        data = [];
     }
     window.location.reload();
 }

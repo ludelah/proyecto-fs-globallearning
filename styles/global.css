@@ -1,41 +1,41 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
-   font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 body {
-  background: rgb(231, 216, 193);
+  background-image: url(../assets/fondo.jpg);
 }
-.menu-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #1e2020be;
-   min-width: 20vw;
-  }
-  a > button {
-    color: #fafafa;
-    background-color: rgba(0, 0, 0, 0);
-    width: 100%;
-    padding: 1em;
-    margin: 3px;
-    border: 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease-out;
-  }
-  
-  a > button:hover {
-    color: rgb(255, 218, 52);
-    background-color: #2b2b2b;
-  }
+.menu-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1e2020be;
+  min-width: 20vw;
+}
+a > button {
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  padding: 1em;
+  margin: 3px;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+a > button:hover {
+  color: rgb(255, 218, 52);
+  background-color: #2b2b2b;
+}
 
 h1 {
   text-align: center;
-  color: #2b2b2b;
-  font-size: 5vw;
+  color: hsl(0, 0%, 17%);
+  font-size: 5em;
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -57,14 +57,14 @@ h2 {
   border: none;
   font-size: 0.8rem;
   letter-spacing: 2px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
   transform: scale(1.2);
   font-weight: bolder;
   color: #f0eded;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 /*Estilos para las cards de animales */
 .animal-container {
@@ -82,24 +82,34 @@ h2 {
 }
 
 .wrap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #9b994c40;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   padding: 1em;
   filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
   width: 100%;
-  h3{
+  font-weight: 800;
+  h3 {
     font-size: 2rem;
   }
   p {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
 }
 
 .img-container {
+  align-content: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  max-width: 500px;
   border-radius: 12px;
+
+  background-color: silver;
 }
 
 .img-container img {
@@ -108,10 +118,10 @@ h2 {
 
 /*MediaQuery*/
 @media (min-width: 800px) and (max-width: 2250px) {
-  main{
+  main {
     grid-template-columns: 1fr 1fr;
   }
-  .animal-container{
+  .animal-container {
     width: 80%;
   }
 }

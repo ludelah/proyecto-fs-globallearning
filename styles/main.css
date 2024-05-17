@@ -3,6 +3,10 @@ h1 {
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth; 
+}
+
 span {
   margin: 10px;
 }
@@ -15,28 +19,63 @@ section {
   border: 2px solid black;
 }
 
-#about {
-  display: flex;
-  flex-direction: column;
+h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+
+
+.animales {
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.animal-container{
+  position: relative;
+  top: 0;
+  margin: 2em auto;
+  
 
   text-align: center;
+  transition: top 0.2s ease-out 0s;
+}
+
+.animal-container:hover {
+  top: -10px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: flex-end;
   background-color: #050505;
 
   margin-top: 20px;
-  padding: 100px;
+  padding: 50px 100px;
 
-  min-width: 100%;
+  max-width: 100%;
   color: #fafafa;
 
 }
 
-#about-text {
-  font-size: 1vw;
+#about > span {
+  text-align: right;
+  font-size: 1.5rem;
 }
 
+footer {
+  text-align: left;
+  padding:5em;
+  color: #fafafa;
+  background-color: #050505;
+}
 
-
-#about > span {
-  text-align: center;
-  font-size: 1.5rem;
+#medios-de-contacto > li {
+  margin: 10px;
 }

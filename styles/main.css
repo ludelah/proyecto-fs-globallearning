@@ -4,7 +4,7 @@ h1 {
 }
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 span {
@@ -13,7 +13,6 @@ span {
 
 main {
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -34,7 +33,6 @@ nav {
   background-color: #b7f89280;
 }
 
-<<<<<<< HEAD
 h2 {
   margin: 0;
   font-size: 2em;
@@ -45,22 +43,6 @@ h3 {
 }
 
 
-
-.animales {
-  border-radius: 10px;
-  background-color: #fafafa;
-}
-
-.animal-container{
-  position: relative;
-  top: 0;
-  margin: 2em auto;
-  
-
-  text-align: center;
-  transition: top 0.2s ease-out 0s;
-}
-
 .animal-container:hover {
   top: -10px;
 }
@@ -68,51 +50,45 @@ h3 {
 .text-container {
   display: flex;
   flex-direction: column;
-  
   align-items: flex-end;
   background-color: #050505;
-
   margin-top: 20px;
   padding: 50px 100px;
-
   max-width: 100%;
-=======
+}
+
 #about {
   text-align: center;
   padding: 1em;
   background-color: #050505;
->>>>>>> 03a7f16 (app finished)
   color: #fafafa;
-  & h2{
+
+  & h2 {
     font-size: 2rem;
   }
-  span{
+
+  span {
     font-size: 1.3rem;
   }
 }
 
-<<<<<<< HEAD
-#about > span {
+#about>span {
   text-align: right;
   font-size: 1.5rem;
 }
 
 footer {
   text-align: left;
-  padding:5em;
+  padding: 5em;
   color: #fafafa;
   background-color: #050505;
   margin: 15px 15px;
 }
 
-#medios-de-contacto > li {
+#medios-de-contacto>li {
   margin: 10px;
 }
 
-#about>span {
-  text-align: center;
-  font-size: 1.5rem;
-=======
 @media (min-width: 800px) and (max-width: 2250px) {
   main {
     grid-template-columns: 1fr 1fr;
@@ -122,5 +98,4 @@ footer {
   .animal-container {
     width: 80%;
   }
->>>>>>> 03a7f16 (app finished)
 }

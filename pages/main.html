@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Tenor+Sans&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles/global.css" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <title>Animales perdidos</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Tenor+Sans&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/global.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <title>Animales perdidos</title>
+</head>
 
 <body>
   <header>
@@ -20,42 +21,16 @@
   </header>
   <nav class="menu-container">
     <a href="./formulario.html"><button>Formulario</button></a>
+    <a href="#contacto"><button>Contacto</button></a>
     <a href="#about"><button>Sobre nosotros</button></a>
   </nav>
   <main>
     <!-- Aca van los animales perdidos     -->
-    <section id="perdidos">
-      <h2>Animales perdidos</h2>
-      <div id="cont-anim-perdidos" class="hidden">
+    <section class="animales" id="perdidos">
+      <h2>Animales perdidos</h2> <div id="cont-anim-perdidos" class="hidden">
         <div id="animal-container" class="animal-container">Esperando nuevo amigo :D
         </div>
-      </div>
-    </section>
-    <section id="encontrados">
-      <h2>Animales encontrados (Ejemplos)</h2>
-      <div class="animal-container">
-        <div class="wrap-container">
-          <div class="img-container"><img src="../assets/gato1.jpg" alt="gato"></div>
-          <h2>Leon</h2>
-          <p>Gato anaranjado</p>
-          <h2>Contacto</h2>
-          <p>email + telefono </p>
-          <div class="btn-container">
-            <button class="btn txtShadow">More info</button>
-  <body>
-    <header>
-      <h1>Perdidos y encontrados</h1>
-    </header>
-    <nav class="menu-container">
-      <a href="./formulario.html"><button>Formulario</button></a>
-      <a href="#contacto"><button>Contacto</button></a>
-      <a href="#about"><button>Sobre nosotros</button></a>
-    </nav>
-    <main>
-      <!-- Aca van los animales perdidos     -->
-      <section class="animales" id="perdidos">
-        <h2>Animales perdidos</h2>
-        <article class="animal-container">
+      <article class="animal-container">
           <div class="wrap-container">
             <div class="img-container"><img src="../assets/gato1.jpg" alt="gato"></div>
             <h3 class="animal-name">Leon</h3>
@@ -67,82 +42,54 @@
               <button class="btn txtShadow">Lo encontré!</button>
             </div>
           </div>
-        </article>
-        <article class="animal-container">
-          <div class="wrap-container">
-            <div class="img-container"><img src="../assets/gato2.jpg" alt="gato" /></div>
-            <h2>Carlos</h2>
-            <p>Gato siamés</p>
-            <h2>Contacto</h2>
-            <p>email + telefono</p>
-            <a href="mailto:fakemail123@123.com">
-              <div class="btn-container">
-                <button class="btn txtShadow">Lo encontré!</button>
-              </div>
-            </a>
-          </div>
-        </article>
-        <article class="animal-container">
-          <div class="wrap-container">
-            <div class="img-container"><img src="../assets/gato3.jpg" alt="gato" /></div>
-            <h2>Kimi</h2>
-            <p>Gato siamés</p>
-            <h2>Contacto</h2>
-            <p>email + telefono</p>
-            <a href="mailto:fakemail123@123.com">
-              <div class="btn-container">
-                <button class="btn txtShadow">Lo encontré!</button>
-              </div>
-            </a>
-          </div>
-        </article>
-        <article class="animal-container">
-          <div class="wrap-container">
-            <div class="img-container"><img src="../assets/gato4.jpg" alt="gato" /></div>
-            <h2>Cuchi</h2>
-            <p>Gato persa</p>
-            <h2>Contacto</h2>
-            <p>email + telefono</p>
-            <a href="mailto:fakemail123@123.com">
-              <div class="btn-container">
-                <button class="btn txtShadow">Lo encontré!</button>
-              </div>
-            </a>
-          </div>
-        </article>
-      </section>
+      </article>
+    </section>
 
-      <section class="animales" id="encontrados">
-        <h2>Animales encontrados</h2>
-        <article class="animal-container">
-          <div class="wrap-container">
-            <div class="img-container"><img src="../assets/gato5.jpg" alt="gato" /></div>
-            <h2>Ojón</h2>
-            <p>Gato blanco con heterocromia</p>
-            <h2>Contacto</h2>
-            <p>email + telefono</p>
-            <a href="mailto:fakemail123@123.com">
-              <div class="btn-container">
-                <button class="btn txtShadow">Reclamar</button>
-              </div>
-            </a>
-          </div>
-        </article>
-        <article class="animal-container">
-          <div class="wrap-container">
-            <div class="img-container"><img src="../assets/gato6.jpg" alt="gato" /></div>
-            <h2>Mariano</h2>
-            <p>Gato esfinge</p>
-            <h2>Contacto</h2>
-            <p>email + telefono</p>
-            <a href="mailto:fakemail123@123.com">
-              <div class="btn-container">
-                <button class="btn txtShadow">Reclamar</button>
-              </div>
-            </a>
-          </div>
+    <section class="animales" id="encontrados">
+      <h2>Animales encontrados</h2>
+      <article class="animal-container">
+        <div class="wrap-container">
+          <div class="img-container"><img src="../assets/gato5.jpg" alt="gato" /></div>
+          <h2>Ojón</h2>
+          <p>Gato blanco con heterocromia</p>
+          <h2>Contacto</h2>
+          <p>email + telefono</p>
+          <a href="mailto:fakemail123@123.com">
+            <div class="btn-container">
+              <button class="btn txtShadow">Reclamar</button>
+            </div>
+          </a>
         </div>
-      </div>
+      </article>
+      
+      <article class="animal-container">
+        <div class="wrap-container">
+          <div class="img-container"><img src="../assets/gato2.jpg" alt="gato" /></div>
+          <h2>Carlos</h2>
+          <p>Gato siamés</p>
+          <h2>Contacto</h2>
+          <p>email + telefono</p>
+          <a href="mailto:fakemail123@123.com">
+            <div class="btn-container">
+              <button class="btn txtShadow">Reclamar!</button>
+            </div>
+          </a>
+        </div>
+      </article>
+      <article class="animal-container">
+        <div class="wrap-container">
+          <div class="img-container"><img src="../assets/gato3.jpg" alt="gato" /></div>
+          <h2>Kimi</h2>
+          <p>Gato siamés</p>
+          <h2>Contacto</h2>
+          <p>email + telefono</p>
+          <a href="mailto:fakemail123@123.com">
+            <div class="btn-container">
+              <button class="btn txtShadow">Reclamar!</button>
+            </div>
+          </a>
+        </div>
+      </article>   
     </section>
   </main>
   <section id="about">
@@ -153,9 +100,6 @@
       ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia fugit eos praesentium voluptatibus
       quasi. Numquam modi in error magnam nam alias corrupti. Ex minus quas nostrum rerum incidunt dolore animi?</span>
   </section>
-  <footer id="contacto">
-    <!-- Contacto -->
-  </footer>
   <script src="../scripts/formulario-data.js"></script>
 </body>
 

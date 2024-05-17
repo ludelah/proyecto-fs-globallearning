@@ -54,6 +54,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             dataUser.textContent = `Contactame - Telefono:${data.tel} - Email: ${data.email}`;
             cardWrap.appendChild(dataUser);
             newCard.appendChild(card);
+
+            let button = document.createElement("button");
+            button.textContent = "Lo encontré!";
+            button.className = "btn"
+            cardWrap.appendChild(button);
         });
 
     }

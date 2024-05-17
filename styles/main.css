@@ -9,10 +9,21 @@ span {
 
 main {
   display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
+
 section {
   margin: 1em;
-  border: 2px solid black;
+  border: 2px solid #0000009a;
+}
+
+#perdidos {
+  background-color: rgba(248, 36, 142, 0.301);
+}
+
+#encontrados {
+  background-color: #b7f89280;
 }
 
 #about {
@@ -36,7 +47,7 @@ section {
 
 
 
-#about > span {
+#about>span {
   text-align: center;
   font-size: 1.5rem;
 }

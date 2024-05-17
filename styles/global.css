@@ -147,7 +147,7 @@ h2 {
 }
 
 .img-container img {
-  object-fit: contain;
+  object-fit: cover;
   max-width: 100%;
 }
 

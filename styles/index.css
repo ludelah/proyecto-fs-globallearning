@@ -9,8 +9,20 @@ h1 {
   font-family: "Poetsen One", sans-serif;
 }
 div{
+  margin: 1em;
   width: 450px;
 }
 img {
   max-width: 100%;
+}
+.btn:hover{
+  animation: zoom 2s ease-in infinite;
+}
+@keyframes zoom {
+ from{
+   scale: 1;
+ }
+ to{
+   scale: 0.8;
+ }  
 }

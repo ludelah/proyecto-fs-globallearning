@@ -13,10 +13,21 @@ span {
 
 main {
   display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
+
 section {
   margin: 1em;
-  border: 2px solid black;
+  border: 2px solid #0000009a;
+}
+
+#perdidos {
+  background-color: rgba(248, 36, 142, 0.301);
+}
+
+#encontrados {
+  background-color: #b7f89280;
 }
 
 h2 {
@@ -76,6 +87,13 @@ footer {
   background-color: #050505;
 }
 
+<<<<<<< HEAD
 #medios-de-contacto > li {
   margin: 10px;
+=======
+
+#about>span {
+  text-align: center;
+  font-size: 1.5rem;
+>>>>>>> 239836d8f6ef4abe5e03955a400715d98a834333
 }

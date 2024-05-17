@@ -13,13 +13,17 @@ span {
 
 main {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
 }
 
 section {
   margin: 1em;
   border: 2px solid #0000009a;
+}
+
+nav {
+  margin: 15px 15px;
 }
 
 #perdidos {
@@ -85,15 +89,14 @@ footer {
   padding:5em;
   color: #fafafa;
   background-color: #050505;
+  margin: 15px 15px;
 }
 
-<<<<<<< HEAD
 #medios-de-contacto > li {
   margin: 10px;
-=======
+}
 
 #about>span {
   text-align: center;
   font-size: 1.5rem;
->>>>>>> 239836d8f6ef4abe5e03955a400715d98a834333
 }

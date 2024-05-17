@@ -137,23 +137,14 @@ h2 {
 }
 
 .img-container {
-  align-content: center;
-  justify-content: center;
-  aspect-ratio: 1;
-  max-width: 500px;
   border-radius: 12px;
-<<<<<<< HEAD
-
   background-color: silver;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   width: 100%;
   height: 400px;
-
->>>>>>> 03a7f16 (app finished)
 }
 
 .img-container img {
@@ -166,7 +157,7 @@ h2 {
   main {
     grid-template-columns: 1fr 1fr;
   }
-  .animal-container {
+  animal-container {
     width: 80%;
   }
 }

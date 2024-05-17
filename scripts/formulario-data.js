@@ -7,45 +7,52 @@ document.addEventListener('DOMContentLoaded', (event) => {
     } else {
         data = [];
     }
-    let newCard = document.getElementById('animal-container');
-
+    let newCard = document.getElementById('cont-anim-perdidos');
+    if(data.length > 0){
+        newCard.classList.remove('hidden');
+    }
+    
     if (newCard) {
 
         data.forEach((data, index) => {
             let card = document.createElement('div');
-            card.className = "wrap-container";
+            card.className = 'animal-container';
+
+            let cardWrap = document.createElement('div');
+            cardWrap.className = "wrap-container";
+            card.appendChild(cardWrap);
+
             if (data.file) {
                 let imgContainer = document.createElement("div");
                 imgContainer.className = "img-container";
 
                 let imgAnimal = document.createElement("img");
                 imgAnimal.src = data.file;
-                imgAnimal.alt = `Imangeb de ${data.animalName}`;
+                imgAnimal.alt = `Imangen de ${data.animalName}`;
                 imgContainer.appendChild(imgAnimal);
-                card.appendChild(imgContainer);
+                cardWrap.appendChild(imgContainer);
             }
 
 
             let nameAnimal = document.createElement("h3");
             nameAnimal.className = "animal-name";
             nameAnimal.textContent = `${data.animalName}`;
-            card.appendChild(nameAnimal);
+            cardWrap.appendChild(nameAnimal);
 
             let dataAnimal = document.createElement("p");
             dataAnimal.className = "animal-data";
             dataAnimal.textContent = `${data.dataAnimal}`;
-            card.appendChild(dataAnimal);
+            cardWrap.appendChild(dataAnimal);
 
             let nameUser = document.createElement("h3");
             nameUser.className = "user-name";
             nameUser.textContent = `${data.nameUser}`;
-            card.appendChild(nameUser);
+            cardWrap.appendChild(nameUser);
 
             let dataUser = document.createElement("p");
             dataUser.className = "user-data";
             dataUser.textContent = `Contactame - Telefono:${data.tel} - Email: ${data.email}`;
-            card.appendChild(dataUser);
-           
+            cardWrap.appendChild(dataUser);
             newCard.appendChild(card);
         });
 

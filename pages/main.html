@@ -14,6 +14,34 @@
     <title>Animales perdidos</title>
   </head>
 
+<body>
+  <header>
+    <h1>Perdidos y encontrados</h1>
+  </header>
+  <nav class="menu-container">
+    <a href="./formulario.html"><button>Formulario</button></a>
+    <a href="#about"><button>Sobre nosotros</button></a>
+  </nav>
+  <main>
+    <!-- Aca van los animales perdidos     -->
+    <section id="perdidos">
+      <h2>Animales perdidos</h2>
+      <div id="cont-anim-perdidos" class="hidden">
+        <div id="animal-container" class="animal-container">Esperando nuevo amigo :D
+        </div>
+      </div>
+    </section>
+    <section id="encontrados">
+      <h2>Animales encontrados (Ejemplos)</h2>
+      <div class="animal-container">
+        <div class="wrap-container">
+          <div class="img-container"><img src="../assets/gato1.jpg" alt="gato"></div>
+          <h2>Leon</h2>
+          <p>Gato anaranjado</p>
+          <h2>Contacto</h2>
+          <p>email + telefono </p>
+          <div class="btn-container">
+            <button class="btn txtShadow">More info</button>
   <body>
     <header>
       <h1>Perdidos y encontrados</h1>
@@ -113,41 +141,22 @@
               </div>
             </a>
           </div>
-        </article>
-        <article class="animal-container">
-          <div class="wrap-container">
-            <div class="img-container"><img src="../assets/gato7.jpg" alt="gato" /></div>
-            <h2>Peludo</h2>
-            <p>Gato atigrado</p>
-            <h2>Contacto</h2>
-            <p>email + telefono</p>
-            <a href="mailto:fakemail123@123.com">
-              <div class="btn-container">
-                <button class="btn txtShadow">Reclamar</button>
-              </div>
-            </a>
-          </div>
-        </article>
-      </section>
-    </main>
-    <div></div>
-    <section class="text-container" id="about">
-      <!-- Sobre nosotros -->
-      <h2>Sobre nosotros</h2>
-      <span
-        >Nos dedicamos a rescatar mascotas perdidas y devolverlas a sus dueños. Nos encontramos operando esta labor
-        desde el año 1946 y no nos cansamos! Buscaremos los necesarios para salvar esta compañía y aca comienza el lorem
-        ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia fugit eos praesentium voluptatibus
-        quasi. Numquam modi in error magnam nam alias corrupti. Ex minus quas nostrum rerum incidunt dolore animi?</span
-      >
+        </div>
+      </div>
     </section>
-    <footer id="contacto">
-      <h3>Contacto</h3>
-      <ul id="medios-de-contacto">
-        <li class="contacto"><i class="fab fa-instagram"> @cuentafalsa123</i></li>
-        <li class="contacto"><i class="fas fa-phone"> +54 11 12345678</i></li>
-        <li class="contacto"><i class="far fa-envelope-open"> mailfalso@dominiofalso.com</i></li>
-      </ul>
-    </footer>
-  </body>
+  </main>
+  <section id="about">
+    <!-- Sobre nosotros -->
+    <h2>Sobre nosotros</h2>
+    <span>Nos dedicamos a rescatar mascotas perdidas y devolverlas a sus dueños. Nos encontramos operando esta labor
+      desde el año 1946 y no nos cansamos! Buscaremos los necesarios para salvar esta compañía y aca comienza el lorem
+      ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia fugit eos praesentium voluptatibus
+      quasi. Numquam modi in error magnam nam alias corrupti. Ex minus quas nostrum rerum incidunt dolore animi?</span>
+  </section>
+  <footer id="contacto">
+    <!-- Contacto -->
+  </footer>
+  <script src="../scripts/formulario-data.js"></script>
+</body>
+
 </html>

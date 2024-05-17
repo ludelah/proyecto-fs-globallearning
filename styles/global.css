@@ -149,6 +149,7 @@ h2 {
 .img-container img {
   object-fit: cover;
   max-width: 100%;
+  max-heigth: 100%;
 }
 
 /*MediaQuery*/
